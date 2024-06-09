@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "DisscussTeam",
+    "name": "DiscussTeam",
     "slug": "DisscussTeam",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/DIscussTeam.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -20,11 +20,23 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#ffffff",
+        "permissions": [
+          "CAMERA",
+          "READ_EXTERNAL_STORAGE",
+          "WRITE_EXTERNAL_STORAGE",
+          "android.permission.RECORD_AUDIO"
+        ]
+      },
+      "package": "com.fadhilfarhan.DisscussTeam"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "65ca32b7-074f-4c9a-a411-1af5068b720e"
+      }
     }
   }
 }

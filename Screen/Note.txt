@@ -1,0 +1,95 @@
+30/03/2024
+-ui login register
+
+31/03/2024
+-backend login register (form only)
+-session 
+
+05/04/2024
+-buat protoype chat 
+-chat harus bisa realtime
+-chat berdasarkan timestamp dan user
+
+06/04/2024
+- fix chat bug -> harusnya dirender setelah user login {chatPrototype}
+
+07/04/2024
+- bikin form add group
+- handle image depedencies -> internal & external
+- handle group profile picture ui
+
+08/04/2024
+- fix keyboard avoiding
+- set profile picture user -> register
+- fix bgcolor login register
+
+09/04/2024
+- dark mode light mode theme fix
+- fix other ui/ux bug
+- profile picture backend image upload -> register
+
+16/04/2024
+- passing data to mainScreen
+- fix bug image reference
+- set image with profilepicture -> mainscreen
+- ui/ux design mainScreen and addGroup
+
+20/04/2024
+- Group db scheme (not fixed)
+- upload Group profile image 
+- addGroup feature backend 
+
+21/04/2024
+-add new group id to creator listteam field
+-render all group after login with flatlist
+-show group data to each list in mainscreen 
+
+22/04/2024
+- add local storage dependecies
+
+28/04/20204
+- show profile picture group and mainscreen
+- Roomchat routing
+- roomchat database scheme
+- passing idgroup and session id to roomchat
+
+11/05/2024
+-passing group id to roomchat
+-send message to group 
+
+12/05/2024
+- add member component and modal
+- add member function (
+    - get id user dari nama yg di input 
+    - groupId pass ke listTeam field -> user
+    - userId pass ke member field -> groupChat
+    - render group ke halaman user yang aru ditambahin
+)
+- render all chat after roomchat open
+- pastiin member baru bisa kirim pesan
+ 
+19/5/2024
+ -onlongpress popup deletegroup modal
+ -backend delete chat
+ -fix padding bug
+
+ 26/5/2024
+ -add tanggal
+ -regex timetamp ke date, hour : minute
+ -delete group ui
+ -text button pop up triger
+
+ to do
+ - backend keluar group
+ - notificaiton
+ - cek & fix bug
+ - rapiin code
+
+
+uncompleted / pending task :
+- dark mode / light mode preference {coba pisahkan dalam komponen}
+- make double storage for local and host
+
+bug :
+- group tidak langsung ke render setelah addGroup, harus login ulang
+- ada delay saat render group setelah login -> (dikasih loading screen dulu agar user gak bingung)
